@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/html/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./Document_files/Rectangle 23.png" alt="" class="silde-header">
+            <div class="inner-head">
+                <div class="inner-head-left">
+                    <ul>
+                        <li><a class="text-1" href="http://127.0.0.1:5500/html/index.html">HOME</a></li>
+                        <li><a class="text-1" href="http://127.0.0.1:5500/html/index.html">ABOUT US</a></li>
+                        <li>
+                            <div style="display:flex ;">
+                                <a class="text-1" href="http://127.0.0.1:5500/html/index.html">OUR MENU </a>
+                                <a href="http://127.0.0.1:5500/html/index.html">
+                                    <img id="down" src="./Document_files/arrow-down-s-fill.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="inner-head-mid"><img id="logo" src="./Document_files/Fatfish Logo White 2.png" alt=""></div>
+                <div class="inner-head-right">
+                    <div class="inner-head-right-1">
+                        <ul>
+                            <li><a class="text-1" href="http://127.0.0.1:5500/html/index.html">MAKE A RESERVATION</a></li>
+                            <li><a class="text-1" href="http://127.0.0.1:5500/html/index.html">BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-head-right-2">
+                        <hr>
+                        <div class="language">
+                            <img src="./Document_files/image 4.png" alt="">
+                            <p class="text-1">EN</p>
+                            <img id="down1" src="./Document_files/arrow-down-s-fill.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="width: 50%;">
+            <a href="http://127.0.0.1:5500/html/index.html#" class="menu-fish text-3">
+                SEE MENU 
+            </a>
+        </div>
+        </header>
+        <img class="nen nen-1" src="./Document_files/Vector2.png" alt="">
+        <img class="nen nen-2" src="./Document_files/Vector3.png" alt="">
+        <img class="nen nen-3" src="./Document_files/Vector4.png" alt="">
+        <section class="container">
+            <div class="content-1">
+                <div class="khoi-1"></div>
+                <div class="khoi-1 ">
+                    <img src="./Document_files/Rectangle 11.png" alt="">
+                </div>
+                <!-- <div class="khoi-1 khoi-1-right"></div> -->
+            </div>
+        </section>
+    </div>
+    <script src="./Document_files/jquery-3.7.0.min.js.download" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(Document).ready(function () {
+            $(window).scroll(function () {
+                var hinh_anh = "../images/image 1.png";
+                var hinh_anh_1 = "../images/Fatfish Logo White 2.png"
+                var hinh_anh_2 = "../images/Group.png"
+                var hinh_anh_3 = "../images/arrow-down-s-fill.png"
+                if ($(this).scrollTop()) {
+                    $('.inner-head').addClass('menu-croll');
+                    $('.text-1').addClass('text-2');
+                    document.getElementById("logo").src = hinh_anh;
+                    document.getElementById("down").src = hinh_anh_2;
+                    document.getElementById("down1").src = hinh_anh_2;
+                } else {
+                    $('.inner-head').removeClass('menu-croll');
+                    $('.text-1').removeClass('text-2');
+                    document.getElementById("logo").src = hinh_anh_1;
+                    document.getElementById("down").src = hinh_anh_3;
+                    document.getElementById("down1").src = hinh_anh_3;
+                }
+            })
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

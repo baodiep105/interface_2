@@ -1,0 +1,99 @@
+@import url(../font/transfonter.org-20230801-064553/stylesheet.css);
+@import url(../font/transfonter.org-20230801-065334/stylesheet.css);
+
+.tieu-de {
+    font-family: "Playfair Display";
+    background-image: linear-gradient(to left, #000733, #002BBA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.text-1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: white;
+}
+
+.text-1-1 {
+    color: #1D1D1D;
+}
+
+.text-2 {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 69.32px;
+}
+
+.text-2-1 {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 69.32px;
+    font-family: "Playfair Display";
+
+}
+
+.text-3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.text-4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+}
+
+.text-5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26.66px;
+}
+.text-5-1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26.66px;
+    font-family: 'Playfair Display';
+    color: #000733;
+}
+
+.text-6 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36.4px;
+    margin-bottom: 20px;
+}
+
+.text-7 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36.4px;
+}
+
+.text-8 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 38px;
+    line-height:50.65px ;
+    color: black  ;
+}
+.text-9 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.text-10 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+.text-11 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    
+}
